@@ -1,11 +1,48 @@
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 #formBody {
     background-color: rgb(210, 231, 224);
     padding: 25px;
     width: 450px;
+    box-shadow: 10px 10px 5px grey;
+    background-image: url('./images/pawel-czerwinski-1373010-unsplash.jpg');
+    margin: 0 auto;
+}
+
+h1 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold; 
+}
+
+h4 {
+    margin: 0;
+}
+
+button, #wordToCheck {
+    color: black;
+    font-weight: bold;
+}
+
+#wordToCheck {
+    margin: 10px 0 0 0;
+}
+
+.correct{
+    color: rgb(10, 170, 10);
+}
+
+.incorrect {
+    color: red;
+}
+
+@media only screen and (max-width: 500) {
+    #formBody {
+        width: 350px;
+    }
+
 }
 

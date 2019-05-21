@@ -20,8 +20,10 @@ submitButton.onclick = () => {
 
   let indicator = document.querySelector('#indicator')
   if (word === reversedWord) {
+    indicator.setAttribute('class', 'correct')
     indicator.textContent = "It's a palindrome"
   } else {
+    indicator.setAttribute('class', 'incorrect')
     indicator.textContent = 'Sorry, it is not a palindrome'
   }
   input.textContent = ''
